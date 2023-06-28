@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About Us - Your Website Builder</title>
+  <title>About Us - WebCrafterIndia</title>
   <style>
     /* Add your custom styles here */
     body {
@@ -31,6 +31,36 @@
       padding: 5px;
     }
 
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li {
+      display: inline-block;
+      position: relative;
+    }
+
+    nav ul li a {
+      display: block;
+      padding: 10px;
+    }
+
+    nav ul li:hover > ul {
+      display: block;
+    }
+
+    nav ul ul {
+      display: none;
+      position: absolute;
+      background-color: #f4f4f4;
+    }
+
+    nav ul ul li {
+      display: block;
+    }
+
     section {
       padding: 20px;
     }
@@ -49,19 +79,29 @@
   </header>
 
   <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="services.html">Services</a>
-    <a href="contact.html">Contact</a>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li>
+        <a href="#">Services</a>
+        <ul>
+            <li><a href="ecommerce.html">E-commerce Solutions</a></li>
+            <li><a href="hospitals.html">Hospital Websites</a></li>
+            <li><a href="seo.html">SEO Optimization</a></li>
+            <li><a href="delivery.html">ExpressLocal Delivery Portal</a></li>
+            <li><a href="loyalty.html">"Loyalty Rewards Solution"</a></li>
+          </ul>
+      </li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
   </nav>
-
   <section>
-    <h2>About Your Website Builder</h2>
+    <h2>About WebCrafterIndia</h2>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec venenatis, justo et commodo ullamcorper, tellus ligula pulvinar justo, id consectetur lectus leo id purus.</p>
   </section>
 
   <footer>
-    <p>&copy; 2023 Your Website Builder. All rights reserved.</p>
+    <p>&copy; 2023 WebCrafterIndia. All rights reserved.</p>
   </footer>
 </body>
 </html>
